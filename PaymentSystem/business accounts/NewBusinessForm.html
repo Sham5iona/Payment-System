@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style1NewBusiness.css">
+    </head>
+    <body>
+        
+   
+    
+    <form method="POST" action="NewBusiness.php" enctype="multipart/form-data">
+
+        <div class="row">
+            <div class="col-25">
+                <label for="ServiceName">Service name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="ServiceName" placeholder="Service Name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="descr">Service description</label>
+            </div>
+            <div class="col-75">
+                <textarea name="descr" placeholder="Service description" required></textarea>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-25">
+                <label for="file">Service Photo</label>
+            </div>
+            <div class="col-75">
+                <input type="file" name="file" required>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-25">
+                <label for="price">Service price</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="price" placeholder="Service price" required>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Create">
+        </div>
+    
+</div>
+    </form>
+</body>
+</html>

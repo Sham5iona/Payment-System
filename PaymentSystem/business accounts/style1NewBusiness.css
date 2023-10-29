@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(186, 211, 219);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+textarea::placeholder{
+font-size: 15px;
+
+}
+textarea{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.col-25 {
+    flex: 0 0 25%;
+    font-size: 18px;
+}
+
+.col-75 {
+    flex: 0 0 75%;
+}
+
+input[type=text] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.link a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:blue;
+}
+.link label{
+    font-size: 20px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
